@@ -8,6 +8,13 @@ public abstract class Entry {
     public LocalDate creationDate;
     public String message;
 
+    public Entry (String message) {
+        this.message = message;
+        this.id = generateId();
+        this.creationDate = LocalDate.now();
+
+    }
+
     public String toString() {
         return "";      
     }
