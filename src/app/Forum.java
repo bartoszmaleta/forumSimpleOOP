@@ -16,4 +16,5 @@ public class Forum {
     public void addTopic(String message, String title) {
         topics.add(new Topic(message, title));
     }
+
 }
